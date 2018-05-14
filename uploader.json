@@ -4230,6 +4230,7 @@
                         "blocked FC remote port time out",
                         "does not seem to be present, delaying initialization",
                         "ext4_ext_search_left",
+			"failed: Connection amqps:",
                         "fiid_obj_get: 'present_countdown_value': data not available",
                         "firewalld - dynamic firewall daemon",
                         "heated above trip temperature",
