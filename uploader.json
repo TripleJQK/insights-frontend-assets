@@ -633,6 +633,11 @@
             "symbolic_name": "tuned_adm"
         },
         {
+            "command": "/usr/sbin/tuned-adm active",
+            "pattern": [],
+            "symbolic_name": "tuned_adm_active"
+        },
+        {
             "command": "/bin/uname -a",
             "pattern": [],
             "symbolic_name": "uname"
@@ -6800,7 +6805,7 @@
                 }
             ]
         },
-        "tuned_adm_active": {
+        "tuned-adm_active": {
             "host": [
                 {
                     "archive_file_name": "/insights_commands/tuned-adm_active",
