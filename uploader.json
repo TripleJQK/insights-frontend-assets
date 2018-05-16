@@ -6800,6 +6800,15 @@
                 }
             ]
         },
+        "tuned_adm_active": {
+            "host": [
+                {
+                    "archive_file_name": "/insights_commands/tuned-adm_active",
+                    "command": "/usr/sbin/tuned-adm active",
+                    "pattern": []
+                }
+            ]
+	},
         "uname": {
             "host": [
                 {
