@@ -6494,29 +6494,6 @@
                 }
             ]
         },
-        "systemctl_httpd": {
-            "docker_container": [
-                {
-                    "archive_file_name": "/insights_data/container/commands/systemctl_show_httpd",
-                    "command": "/bin/systemctl --root={CONTAINER_MOUNT_POINT} show httpd",
-                    "pattern": []
-                }
-            ],
-            "docker_image": [
-                {
-                    "archive_file_name": "/insights_data/image/commands/systemctl_show_httpd",
-                    "command": "/bin/systemctl --root={CONTAINER_MOUNT_POINT} show httpd",
-                    "pattern": []
-                }
-            ],
-            "host": [
-                {
-                    "archive_file_name": "/insights_commands/systemctl_show_httpd",
-                    "command": "/bin/systemctl show httpd",
-                    "pattern": []
-                }
-            ]
-        },
         "systemctl_cinder-volume": {
             "docker_container": [
                 {
