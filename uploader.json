@@ -355,11 +355,6 @@
             "symbolic_name": "ls_var_tmp"
         },
         {
-            "command": "/bin/ls -ln /var/tmp",
-            "pattern": [],
-            "symbolic_name": "ls_var_tmp"
-        },
-        {
             "command": "/bin/lsblk",
             "pattern": [],
             "symbolic_name": "lsblk"
@@ -3982,6 +3977,18 @@
                     "archive_file_name": "/insights_commands/ls_-la_.dev.null_.var.www",
                     "command": "/bin/ls -la /dev/null /var/www",
                     "pattern": []
+                }
+            ]
+        },
+	"ls_var_tmp"
+	    "host": [
+                {
+                    "archive_file_name": "/insights_commands/ls_-ln_.var.tmp",
+                    "command": "/bin/ls -ln /var/tmp",
+                    "pattern": [
+			"/var/tmp",
+			"foreman-ssh-cmd"
+		    ]
                 }
             ]
         },

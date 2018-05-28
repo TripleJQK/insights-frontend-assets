@@ -354,11 +354,6 @@
             "pattern": [],
             "symbolic_name": "ls_var_tmp"
         },
-	{
-            "command": "/bin/ls -ln /var/tmp",
-            "pattern": [],
-            "symbolic_name": "ls_var_tmp"
-        },
         {
             "command": "/bin/lsblk",
             "pattern": [],
