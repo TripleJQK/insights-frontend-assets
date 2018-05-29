@@ -633,6 +633,16 @@
             "symbolic_name": "systemctl_httpd"
         },
         {
+            "command": "/bin/systemctl show qpidd",
+            "pattern": [],
+            "symbolic_name": "systemctl_qpidd"
+        },
+        {
+            "command": "/bin/systemctl show qrouterd",
+            "pattern": [],
+            "symbolic_name": "systemctl_qrouterd"
+        },
+        {
             "command": "/usr/bin/teamdctl  state dump",
             "pattern": [],
             "pre_command": "iface",

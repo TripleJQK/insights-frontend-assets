@@ -628,6 +628,16 @@
             "symbolic_name": "systemctl_mariadb"
         },
         {
+            "command": "/bin/systemctl show qpidd",
+            "pattern": [],
+            "symbolic_name": "systemctl_qpidd"
+        },
+        {
+            "command": "/bin/systemctl show qrouterd",
+            "pattern": [],
+            "symbolic_name": "systemctl_qrouterd"
+        },
+        {
             "command": "/bin/systemctl show httpd",
             "pattern": [],
             "symbolic_name": "systemctl_httpd"
