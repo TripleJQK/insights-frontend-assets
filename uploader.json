@@ -491,7 +491,7 @@
             "symbolic_name": "numeric_user_group_name"
         },
         {
-            "command": "/bin/grep  '^foreman:' /etc/passw",
+            "command": "/bin/grep  '^foreman:' /etc/passwd",
             "pattern": [],
             "symbolic_name": "passwd_foreman"
         },
