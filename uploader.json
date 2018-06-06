@@ -1811,7 +1811,7 @@
             "file": "/etc/logrotate.d/().*",
             "pattern": [],
             "symbolic_name": "logrotate_conf"
-        },
+        }
     ],
     "globs": [],
     "meta_specs": {
