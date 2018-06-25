@@ -205,6 +205,11 @@
             "symbolic_name": "grub_config_perms"
         },
         {
+            "command": "/usr/sbin/grubby --default-index",
+            "pattern": [],
+            "symbolic_name": "grubby_default_index"
+        },
+        {
             "command": "/usr/bin/crontab -l -u heat",
             "pattern": [
                 "heat-manage"
@@ -1958,4 +1963,3 @@
     },
     "version": "2018-06-07T14:24:00.502784"
 }
-
