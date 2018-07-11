@@ -366,6 +366,11 @@
             "symbolic_name": "ls_var_run"
         },
         {
+            "command": "/bin/ls -ln /var/spool/postfix/maildrop",
+            "pattern": [],
+            "symbolic_name": "ls_var_spool_postfix_maildrop"
+        },
+        {
             "command": "/bin/ls -lan /",
             "pattern": [],
             "symbolic_name": "ls_osroot"
