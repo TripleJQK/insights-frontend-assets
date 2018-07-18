@@ -1276,6 +1276,7 @@
         {
             "file": "/etc/()*mongod.conf",
             "pattern": [
+                "dbpath",
                 "destination",
                 "syslog",
                 "systemLog"
