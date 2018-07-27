@@ -125,6 +125,11 @@
             "symbolic_name": "dmidecode"
         },
         {
+            "command": "/usr/sbin/dmsetup info -C",
+            "pattern": [],
+            "symbolic_name": "dmsetup_info"
+        },
+        {
             "command": "/usr/bin/docker info",
             "pattern": [],
             "symbolic_name": "docker_info"
@@ -349,6 +354,11 @@
             "command": "/bin/ls -lanR /sys/firmware",
             "pattern": [],
             "symbolic_name": "ls_sys_firmware"
+        },
+        {
+            "command": "/bin/ls -la /var/lib/mongodb",
+            "pattern": [],
+            "symbolic_name": "ls_var_lib_mongodb"
         },
         {
             "command": "/bin/ls -la /var/log /var/log/audit",
@@ -726,6 +736,11 @@
             "symbolic_name": "vgs_noheadings"
         },
         {
+            "command": "/usr/bin/virsh --readonly list --all",
+            "pattern": [],
+            "symbolic_name": "virsh_list_all"
+        },
+        {
             "command": "/usr/sbin/virt-what",
             "pattern": [],
             "symbolic_name": "virt_what"
@@ -759,6 +774,11 @@
             "file": "/etc/redhat_access_proactive/machine-id",
             "pattern": [],
             "symbolic_name": "machine_id2"
+        },
+        {
+            "file": "/etc/insights-client/machine-id",
+            "pattern": [],
+            "symbolic_name": "machine_id3"
         },
         {
             "file": "/var/log/audit/audit.log",
@@ -894,6 +914,16 @@
             "file": "/sys/devices/system/clocksource/clocksource0/current_clocksource",
             "pattern": [],
             "symbolic_name": "current_clocksource"
+        },
+        {
+            "file": "/sys/devices/system/cpu/smt/active",
+            "pattern": [],
+            "symbolic_name": "cpu_smt_active"
+        },
+        {
+            "file": "/sys/devices/system/cpu/smt/control",
+            "pattern": [],
+            "symbolic_name": "cpu_smt_control"
         },
         {
             "file": "/sys/devices/system/cpu/vulnerabilities/meltdown",
@@ -1207,6 +1237,7 @@
                 "Error running DeviceResume dm_task_run failed",
                 "List /apis/image.openshift.io/v1/images",
                 "Machine",
+                "Medium access timeout failure. Offlining disk!",
                 "Neighbour table overflow",
                 "Out of MCCQ wrbs",
                 "Out of memory: kill process",
@@ -2010,9 +2041,39 @@
                 "Duplicate iptables rule detected"
             ],
             "symbolic_name": "neutron_l3_agent_log"
+        },
+        {
+            "file": "/var/log/neutron/metadata-agent.log",
+            "pattern": [
+                "Unauthorized: {\"error\": {\"message\": \"The resource could not be found.\", \"code\": 404, \"title\": \"Not Found\"}}"
+            ],
+            "symbolic_name": "neutron_metadata_agent_log"
+        },
+        {
+            "file": "/var/log/containers/neutron/metadata-agent.log",
+            "pattern": [
+                "Unauthorized: {\"error\": {\"message\": \"The resource could not be found.\", \"code\": 404, \"title\": \"Not Found\"}}"
+            ],
+            "symbolic_name": "neutron_metadata_agent_log"
         }
     ],
-    "globs": [],
+    "globs": [
+        {
+            "glob": "sys/devices/system/cpu/cpu[0-9]*/online",
+            "symbolic_name": "cpu_cores",
+            "pattern": []
+        },
+        {
+            "glob": "sys/devices/system/cpu/cpu[0-9]*/topology/thread_siblings_list",
+            "symbolic_name": "cpu_siblings",
+            "pattern": []
+        },
+        {
+            "glob": "sys/devices/system/cpu/vulnerabilities/*",
+            "symbolic_name": "cpu_vulns",
+            "pattern": []
+        }
+    ],
     "meta_specs": {
         "analysis_target": {
             "archive_file_name": "/insights_data/analysis_target"
@@ -7518,5 +7579,5 @@
             ]
         }
     },
-    "version": "2018-07-12T15:18:49.754511"
+    "version": "2018-07-19T16:02:43.088286"
 }
