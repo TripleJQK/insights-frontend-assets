@@ -1739,7 +1739,12 @@
         },
         {
             "file": "/etc/sysconfig/foreman-tasks",
-            "pattern": [],
+            "pattern": [
+	        "EXECUTOR_MEMORY_LIMIT",
+                "EXECUTOR_MEMORY_MONITOR_DELAY",
+                "EXECUTOR_MEMORY_MONITOR_INTERVAL"
+            ],
+
             "symbolic_name": "foreman_tasks_config"
         },
         {
