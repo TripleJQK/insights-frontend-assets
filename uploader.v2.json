@@ -1636,7 +1636,6 @@
             ],
             "symbolic_name": "puppetserver_config"
         },
-
         {
             "file": "/etc/libvirt/qemu.conf",
             "pattern": [],
