@@ -436,6 +436,7 @@
         {
             "command": "/usr/sbin/lsof",
             "pattern": [
+		"(deleted)",
                 "/var/log/journal",
                 "COMMAND",
                 "libcrypto",
